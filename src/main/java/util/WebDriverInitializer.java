@@ -3,6 +3,7 @@ package util;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class WebDriverInitializer {
     WebDriver driver;
@@ -15,7 +16,10 @@ public class WebDriverInitializer {
 
             case "edge":
                 WebDriverManager.edgedriver().setup();
-//                this.driver = new Edgedriver();
+                this.driver = new EdgeDriver();
+
+            default:
+                System.out.println("No browser is selected");
         }
     }
 }
