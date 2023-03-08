@@ -28,5 +28,34 @@ public class RegisterPage {
     public void fillLastName(String LastName){
         this.driver.findElement(this.lastName).sendKeys(LastName);
     }
-
+    public void addressLine(String addressLine){
+        this.driver.findElement(this.addressLine).sendKeys(addressLine);
+    }
+    public void city(String city){
+        this.driver.findElement(this.city).sendKeys(city);
+    }
+    public void state(String state){
+        this.driver.findElement(this.state).sendKeys(state);
+    }
+    public void zipCode(String zipCode){
+        this.driver.findElement(this.zipCode).sendKeys(zipCode);
+    }
+    public void phonessnNumber(String phoneNumber){
+        this.driver.findElement(this.phoneNumber).sendKeys(phoneNumber);
+    }
+    public void ssn(String ssn){
+        this.driver.findElement(this.ssn).sendKeys(ssn);
+    }
+    public void customerUserName(String customerUserName){
+        this.driver.findElement(this.customerUserName).sendKeys(customerUserName);
+    }
+    public void customerPassword(String customerPassword){
+        this.driver.findElement(this.customerPassword).sendKeys(customerPassword);
+    }
+    public void confirmPassword(String confirmPassword){
+        this.driver.findElement(this.confirmPassword).sendKeys(confirmPassword);
+    }
+    public void register(String register){
+        this.driver.findElement(this.register).sendKeys(register);
+    }
 }
