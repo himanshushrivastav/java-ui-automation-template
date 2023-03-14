@@ -12,12 +12,15 @@ public class LoginPage {
     By loginBtn = By.cssSelector("input[type='submit']");
 
     public LoginPage(WebDriver driver) {
+
         this.driver = driver;
     }
     public void clickRegisterLink(){
+
         this.driver.findElement(this.register).click();
     }
     public void fillUserName(String userName){
+
         this.driver.findElement(this.userName).sendKeys(userName);
     }
     public void fillPassword(String pswd){

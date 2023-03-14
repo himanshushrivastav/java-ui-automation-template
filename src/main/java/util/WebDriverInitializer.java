@@ -8,7 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 public class WebDriverInitializer {
     WebDriver driver;
 
-    public void createWebdriver(String type){
+    public WebDriver createWebDriver(String type){
         switch (type.toLowerCase()){
             case "chrome":
                 WebDriverManager.chromedriver().setup();
@@ -21,5 +21,6 @@ public class WebDriverInitializer {
             default:
                 System.out.println("No browser is selected");
         }
+        return driver;
     }
 }

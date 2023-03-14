@@ -55,7 +55,7 @@ public class RegisterPage {
     public void confirmPassword(String confirmPassword){
         this.driver.findElement(this.confirmPassword).sendKeys(confirmPassword);
     }
-    public void register(String register){
-        this.driver.findElement(this.register).sendKeys(register);
+    public void register(){
+        this.driver.findElement(this.register).click();
     }
 }
